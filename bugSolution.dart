@@ -1,0 +1,13 @@
+```dart
+List<int> numbers = [1, 2, 3, 4, 5];
+int sum = numbers.isEmpty ? 0 : numbers.reduce((a, b) => a + b);
+print(sum); // Output: 15
+
+List<String> strings = ['a', 'b', 'c'];
+String concatenatedString = strings.isEmpty ? '' : strings.reduce((a, b) => a + b);
+print(concatenatedString); // Output: abc
+
+List<int> emptyList = [];
+int sumEmpty = emptyList.isEmpty ? 0 : emptyList.reduce((a, b) => a + b);
+print(sumEmpty); // Output: 0
+```
